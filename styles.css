@@ -40,6 +40,15 @@ ol {
   transform: translate(-50%, -50%);
 }
 
+#heroBanner h1.tp {
+  font-size: 40px;
+}
+
+#heroBanner h1.black {
+  color: black;
+  text-shadow: 6px 5px 8px white;
+}
+
 #footer {
   font-family: Arial;
   font-size: 12px;
@@ -72,6 +81,24 @@ ol {
   width: 33%;
 }
 
+#recipeColumns #ingredients ul {
+  display: none;
+}
+
+#recipeColumns #equipment ul {
+  display: none;
+}
+
+#recipeColumns #directions ol {
+  display: none;
+}
+
+#recipeColumns #ingredients.tpShow ul,
+#recipeColumns #equipment.tpShow ul,
+#recipeColumns #directions.tpShow ol{
+  display: block;
+}
+
   {
   box-sizing: border-box;
 }
@@ -80,15 +107,15 @@ ol {
   #heroBanner {
     height: 100vh;
   }
- #heroBanner h1 {
+  #heroBanner h1 {
     font-size: 40px;
   }
- #recipeColumns {
+  #recipeColumns {
     width: 100%;
     height: auto;
     display: block;
   }
- #recipeColumns div {
+  #recipeColumns div {
     float: none;
     display: block;
   }
@@ -110,10 +137,10 @@ ol {
 }
 
 @media screen and (orientation: portrait) {
- #heroBanner {
+  #heroBanner {
     height: 50vh;
   }
- #heroBanner h1 {
+  #heroBanner h1 {
     font-size: 50px;
   }
   ##recipeColumns {
@@ -125,10 +152,10 @@ ol {
     float: none;
     display: block;
   }
- #recipeColumns div#ingredients {
+  #recipeColumns div#ingredients {
     width: 100%;
   }
- #recipeColumns div#equipment {
+  #recipeColumns div#equipment {
     width: 100%;
   }
   #recipeColumns div#directions {
@@ -137,7 +164,7 @@ ol {
   #recipeColumns li {
     font-size: 15px;
   }
-#recipeColumns h4 {
+  #recipeColumns h4 {
     font-size: 20px;
   }
 }
